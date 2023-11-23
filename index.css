@@ -5,14 +5,13 @@
    
 }
 .footercontainer{
-    background-color: rgb(255, 235, 244);
+    background-color: Black; 
     border-width:4px;
     border-color: black;
     border-style:solid;
     border-radius:2em;
     height:3em;
-  
-  
+
 }
 .txtinput{
    width:90%;
@@ -31,6 +30,7 @@
     width:100%;
    display: flex;
   align-items: center;
+ 
 }
 #mic,#attachment,#send{
     font-size:1.2em;
@@ -102,9 +102,7 @@ h3
 .main{
     height:100vh;
 }
-.line{
-  
-}
+
 @media(max-width:1400px){
     #send{
         padding-left:0.5em;
