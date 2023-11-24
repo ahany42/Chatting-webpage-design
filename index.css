@@ -167,7 +167,9 @@ h3
     .txtinput{
         width:85%;
     }
- 
+ .footercontainer{
+    width:95%;
+ }
 }
 @media(max-width:700px){
     .recievermessage{
