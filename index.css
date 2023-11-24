@@ -11,8 +11,19 @@
     border-style:solid;
     border-radius:2em;
     height:3em;
+    z-index:10;
+    position: fixed;
+    width:98%;
+    bottom:0;
 
 }
+/* .header{
+    z-index:10;
+    position: fixed;
+    width:98%;
+    top:0;
+   
+} */
 .txtinput{
    width:90%;
    border-style: none;
@@ -102,6 +113,42 @@ h3
 .main{
     height:100vh;
 }
+.sendermessage{
+    background-color: rgb(29, 28, 28);
+    color: rgb(116, 76, 76);
+    font-weight:600 ;
+    padding:1em;
+    padding-left:2em;
+    width:10em;
+    text-align: left;
+    border-top-right-radius:2em;
+    border-top-left-radius:0.5em;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius:0.5em;
+    margin:2em;
+    margin-bottom:3em;
+
+   
+}
+.recievermessage{
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(116, 76, 76);
+    font-weight:600 ;
+    padding:1em;
+    padding-left:2em;
+    width:10em;
+    text-align: left;
+    border-top-left-radius:2em;
+    border-top-right-radius:0.5em;
+    border-bottom-right-radius:2em;
+    border-bottom-left-radius:0.5em;
+    margin-bottom:3em;
+    margin-right:2em;
+  
+    margin-left: auto;
+
+}
+
 
 @media(max-width:1400px){
     #send{
@@ -123,6 +170,12 @@ h3
  
 }
 @media(max-width:700px){
+    .recievermessage{
+    margin-right: 1em;
+    }
+    .sendermessage{
+        margin-left:1em;
+    }
     #mic,#attachment,#send{
         font-size:1em;
       
@@ -133,6 +186,7 @@ h3
     .textinputcontainer{
         width:80%;
     }
+
 }
 @media(max-width:500px){
     .arrowcontainer{
@@ -156,4 +210,5 @@ h3
     .txtinput::placeholder{
         font-size:0.9em;
     }
+    
 } 
