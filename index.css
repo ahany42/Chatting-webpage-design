@@ -17,13 +17,14 @@
     bottom:0;
 
 }
-/* .header{
+.header{
     z-index:10;
-    position: fixed;
+    position:fixed;
     width:98%;
     top:0;
    
-} */
+}
+
 .txtinput{
    width:90%;
    border-style: none;
@@ -73,7 +74,6 @@ input:focus::placeholder {
     
 }
 
-
 .back{
     color:rgb(116, 76, 76);
     font-size:0.8em;
@@ -104,6 +104,7 @@ h3
     color:rgb(116, 76, 76);
     font-size: 1.5em;
 }
+
 .sendername{
     display:flex;
     justify-content: center;
@@ -111,11 +112,11 @@ h3
 
 }
 .main{
-    height:100vh;
+    height:25vh;
 }
 .sendermessage{
-    background-color: rgb(29, 28, 28);
-    color: rgb(116, 76, 76);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight:600 ;
     padding:1em;
     padding-left:2em;
@@ -127,8 +128,21 @@ h3
     border-bottom-right-radius:0.5em;
     margin:2em;
     margin-bottom:3em;
-
+    align-items:center;
+    height:2em;
    
+}
+.sendermessage>img{
+    height:2.5em;
+    
+}
+#voicenote{
+    display: flex;
+    justify-content: space-between;
+}
+.txtspan{
+    margin-right:0.5em;
+    font-size:1.2em;
 }
 .recievermessage{
     background-color: rgb(0, 0, 0);
@@ -144,13 +158,16 @@ h3
     border-bottom-left-radius:0.5em;
     margin-bottom:3em;
     margin-right:2em;
-  
     margin-left: auto;
 
 }
 
-
+.chatcontent{
+    height:auto;
+    scroll-behavior: smooth;
+}
 @media(max-width:1400px){
+    
     #send{
         padding-left:0.5em;
     }
@@ -160,6 +177,7 @@ h3
     }
 }
 @media(max-width:1050px){
+  
     #mic,#attachment,#send{
         font-size:1em;
       
@@ -171,10 +189,13 @@ h3
     width:95%;
  }
 }
+
+
 @media(max-width:700px){
     .recievermessage{
     margin-right: 1em;
     }
+  
     .sendermessage{
         margin-left:1em;
     }
@@ -196,6 +217,13 @@ h3
         font-size:0.8em;
         width:55%;
     }
+    .txtinput::placeholder{
+       
+            text-align:left;
+            padding-left:0em; 
+        
+    }
+
 }
 @media(max-width:350px){
     #mic,#attachment,#send{
@@ -211,6 +239,7 @@ h3
     }
     .txtinput::placeholder{
         font-size:0.9em;
+        
     }
     
 } 
