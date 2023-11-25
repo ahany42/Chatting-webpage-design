@@ -2,6 +2,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
    
 }
 .footercontainer{
@@ -22,6 +23,7 @@
     position:fixed;
     width:98%;
     top:0;
+    background-color: rgb(255, 255, 255)
    
 }
 
@@ -75,11 +77,11 @@ input:focus::placeholder {
 }
 
 .back{
-    color:rgb(116, 76, 76);
+    color:rgb(0, 0, 0);
     font-size:0.8em;
 }
 #arrow{
-    color:rgb(116, 76, 76);
+    color:rgb(0, 0, 0);
     font-size:1.5em;
     margin-left:1em;
     margin-top:0.5em ;
@@ -87,12 +89,15 @@ input:focus::placeholder {
   
     
 }
-
+.line{
+    background-color:rgb(116, 76, 76);
+    height:1px;
+}
 #avatar {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    border: 5px solid rgb(116, 76, 76);
-    color:rgb(116, 76, 76);
+    border: 5px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
     padding: 15px;
     font-size: 3em;
     margin-right:0.5em;
@@ -109,10 +114,17 @@ h3
     display:flex;
     justify-content: center;
     align-items: center;
+    color: black;
 
 }
 .main{
     height:25vh;
+}
+.date{
+    text-align: center;
+}
+.sendermessage>i,.recievermessage>i{
+    font-size:1.3em;
 }
 .sendermessage{
     background-color: rgb(0, 0, 0);
@@ -132,14 +144,15 @@ h3
     height:2em;
    
 }
-.sendermessage>img{
+.sendermessage>img,.recievermessage>img{
     height:2.5em;
     
 }
-#voicenote{
+#voicenote,#voicenote1{
     display: flex;
     justify-content: space-between;
 }
+
 .txtspan{
     margin-right:0.5em;
     font-size:1.2em;
@@ -158,13 +171,20 @@ h3
     border-bottom-left-radius:0.5em;
     margin-bottom:3em;
     margin-right:2em;
+    align-items:center;
     margin-left: auto;
-
+    height:2em;
 }
 
 .chatcontent{
     height:auto;
     scroll-behavior: smooth;
+}
+#lastmessage{
+    margin-bottom:4em;
+}
+#firstmessage{
+    margin-top:4em;
 }
 @media(max-width:1400px){
     
@@ -243,3 +263,4 @@ h3
     }
     
 } 
+

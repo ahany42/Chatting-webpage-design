@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="assets/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,14 +15,17 @@
     <body>
 <section class="main">
 <div class="header">
-    <i class="fa-solid fa-arrow-left" id="arrow"> <span class="back">Back</span></i>    
+    <i class="fa-solid fa-arrow-left" id="arrow"> <span class="back">Back</span></i>   
     <h3 class="sendername"><i class="fa-solid fa-user-tie" id="avatar"></i> Aly Hany</h3>
-    <hr clas="line">
+    <div class="line"></div>
 </div>
+
 </section>
+
 <section>
     <div class="chatcontent">
-        <div class="sendermessage">
+        <p class="date">Today</p>
+        <div class="sendermessage"id="firstmessage">
             <span class="txtspan">hello</span><i class="fa-solid fa-face-laugh-beam" style="color: #ffd43b;"></i>
         </div>
         <div class="sendermessage">
@@ -34,16 +37,26 @@
         </div>
         <div class="sendermessage" id="voicenote">
             <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-            <img src="sound-waveform-wave-svgrepo-com.svg">
-            <img src="sound-waveform-wave-svgrepo-com.svg">
-            <img src="sound-waveform-wave-svgrepo-com.svg">
+            <img src="assets/waveform-line-white.svg">
+            <img src="assets/waveform-line-white.svg">
+            <img src="assets/waveform-line-white.svg">
         <div class="secscontainer">
             <h6>0.15</h6>
         </div>
         </div>
-        <div class="recievermessage">
+        <div class="recievermessage" id="voicenote1">
+            <i class="fa-solid fa-play" style="color: #000000;" id="playicon"></i>
+            <img src="assets/waveform-line-black.svg">
+            <img src="assets/waveform-line-black.svg">
+            <img src="assets/waveform-line-black.svg">
+        <div class="secscontainer">
+            <h6>0.15</h6>
+        </div>
+        </div>
+        <div class="recievermessage" id="lastmessage">
             <span class="txtspan">HAHAHAHA</span><i class="fa-solid fa-face-grin-tongue-squint" style="color: #ffd43b;"></i>
         </div>
+        
     </div>
 </section>
 <div class="footercontainer">
@@ -62,5 +75,7 @@
    
 </footer>
 </div>
+<script src="index.js"></script>
     </body>
+    
 </html>
