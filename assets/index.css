@@ -158,8 +158,8 @@ h3
     font-size:1.2em;
 }
 .recievermessage{
-    background-color: rgb(0, 0, 0);
-    background-color: rgb(116, 76, 76);
+    color: rgb(0, 0, 0);
+    background-color: rgb(175, 120, 120);
     font-weight:600 ;
     padding:1em;
     padding-left:2em;
@@ -185,6 +185,9 @@ h3
 }
 #firstmessage{
     margin-top:4em;
+}
+.date{
+    font-weight:600;
 }
 @media(max-width:1400px){
     
